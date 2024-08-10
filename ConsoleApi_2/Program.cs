@@ -17,7 +17,7 @@ namespace ConsoleApi_2
                 if (response.IsSuccessStatusCode)
                 {
                     var json = await response.Content.ReadAsStringAsync();
-                    ;
+                    
                     var pokemon = JsonConvert.DeserializeObject<Pokemon>(json);
                     Console.WriteLine("*******************");
                     Console.WriteLine("Id: " + pokemon.Id);
